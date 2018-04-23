@@ -123,7 +123,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 # Lineage hardware
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
+ifneq ($(filter lineage rr, $(foreach n, lineage rr, $(findstring $(n), $(TARGET_PRODUCT)))),)
 BOARD_HARDWARE_CLASS := \
     hardware/samsung/lineagehw
 endif
