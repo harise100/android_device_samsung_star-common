@@ -5,7 +5,7 @@
         "branch" : "lineage-15.1"
     },
     {
-        "repository": "msdx321/android_kernel_samsung_universal9810",
+        "repository": "harise100/android_kernel_samsung_universal9810",
         "target_path": "kernel/samsung/universal9810",
         "branch" : "oreo"
     }
