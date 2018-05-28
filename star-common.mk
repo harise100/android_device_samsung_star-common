@@ -3,7 +3,7 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-ifneq ($(filter lineage rr, $(foreach n, lineage rr, $(findstring $(n), $(TARGET_PRODUCT)))),)
+ifneq ($(filter lineage rr, $(foreach n, lineage dot, $(findstring $(n), $(TARGET_PRODUCT)))),)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 endif
 
