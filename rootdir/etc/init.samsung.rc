@@ -39,6 +39,9 @@ on init
     chmod 0660 /sys/class/sec/sec_hw_param/smd_info
     chown system system /sys/class/sec/sec_hw_param/thermal_info
 
+    # Set UI thred runnable time to 0
+        setprop sys.use_fifo_ui 1
+    
 on post-fs
     # mobicore
     setprop sys.mobicoredaemon.enable stopped
